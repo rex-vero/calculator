@@ -1,0 +1,39 @@
+input {
+  outline: none;
+  cursor: auto;
+  width: 44vw;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.button {
+  border: 2px solid black;
+  outline: none;
+  height: 12vh;
+  width: 10vw;
+  font-size: 28px;
+}
+
+#clear {
+  width: 44vw;
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 990px) {
+  #clear {
+    width: 24vw;
+    font-size: 18px;
+  }
+  input {
+    width: 24vw;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .button {
+    height: 6vh;
+    width: 5vw;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

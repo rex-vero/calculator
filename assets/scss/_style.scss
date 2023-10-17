@@ -1,0 +1,56 @@
+input {
+    @include border();
+    outline: none;
+    cursor: auto;
+    width: 44vw;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    @include bg();
+
+    &::placeholder {
+        color: rgb(0, 0, 0);
+    }
+}
+
+.button {
+    @include border();
+    outline: none;
+    height: 12vh;
+    width: 10vw;
+    @include color();
+    @include hover();
+}
+
+.clear {
+    @include border();
+    width: 44vw;
+    @include color();
+}
+
+.day {
+    font-size: 30px;
+    color: rgb(247, 204, 12);
+    @include border();
+    background-color: rgb(58, 144, 150);
+    @include hover();
+
+}
+
+.night {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #000033;
+    @include hover();
+
+}
+
+#color-2 {
+    display: none;
+}
+
+.bg-day {
+    background-image: url('../photo/day.png');
+    @include background();
+}

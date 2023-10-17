@@ -1,0 +1,14 @@
+.bg-night {
+    background-image: url('../photo/night.jpg');
+    @include background();
+}
+
+.btn-color {
+    @include bg();
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+
+    &::placeholder {
+        color: rgb(255, 255, 255);
+    }
+}

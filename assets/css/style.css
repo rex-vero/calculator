@@ -1,39 +1,103 @@
 input {
+  border: 1px solid black;
   outline: none;
   cursor: auto;
   width: 44vw;
   padding: 20px;
   font-size: 30px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.151);
+}
+input::placeholder {
+  color: rgb(0, 0, 0);
 }
 
 .button {
-  border: 2px solid black;
+  border: 1px solid black;
   outline: none;
   height: 12vh;
   width: 10vw;
   font-size: 28px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.151);
+}
+.button:hover {
+  transition: 0.3s;
+  transform: scale(1.04);
 }
 
-#clear {
+.clear {
+  border: 1px solid black;
   width: 44vw;
   font-size: 28px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.151);
+}
+
+.day {
+  font-size: 30px;
+  color: rgb(247, 204, 12);
+  border: 1px solid black;
+  background-color: rgb(58, 144, 150);
+}
+.day:hover {
+  transition: 0.3s;
+  transform: scale(1.04);
+}
+
+.night {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #000033;
+}
+.night:hover {
+  transition: 0.3s;
+  transform: scale(1.04);
+}
+
+#color-2 {
+  display: none;
+}
+
+.bg-day {
+  background-image: url("../photo/day.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 990px) {
-  #clear {
-    width: 24vw;
-    font-size: 18px;
+  .clear {
+    width: 85vw;
+    font-size: 28px;
   }
   input {
-    width: 24vw;
+    width: 85vw;
     padding: 10px;
-    font-size: 15px;
+    font-size: 20px;
+    margin-bottom: 3px;
   }
   .button {
-    height: 6vh;
-    width: 5vw;
-    font-size: 16px;
+    height: 9vh;
+    width: 19vw;
+    font-size: 24px;
   }
+}
+.bg-night {
+  background-image: url("../photo/night.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-color {
+  background-color: rgba(255, 255, 255, 0.151);
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+}
+.btn-color::placeholder {
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */

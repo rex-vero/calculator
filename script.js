@@ -16,6 +16,9 @@ const dot = document.getElementById('dot');
 const clear = document.getElementById('clear');
 const result = document.getElementById('result');
 const show = document.getElementById('show');
+const color = document.getElementById('color');
+const color2 = document.getElementById('color-2');
+const backGround = document.getElementById('bg');
 num1.addEventListener('click', () => { show.value += num1.innerText; })
 num2.addEventListener('click', () => { show.value += num2.innerText; })
 num3.addEventListener('click', () => { show.value += num3.innerText; })
@@ -31,5 +34,53 @@ add.addEventListener('click', () => { show.value += add.innerText; })
 minus.addEventListener('click', () => { show.value += minus.innerText; })
 divide.addEventListener('click', () => { show.value += '/'; })
 times.addEventListener('click', () => { show.value += '*'; })
-result.addEventListener('click', () => { show.value = eval(show.value) })
+result.addEventListener('click', () => { show.value = eval(show.value); })
 clear.addEventListener('click', () => { show.value = ''; })
+color.addEventListener('click', () => {
+    num1.classList.add('btn-color');
+    num2.classList.add('btn-color');
+    num3.classList.add('btn-color');
+    num4.classList.add('btn-color');
+    num5.classList.add('btn-color');
+    num6.classList.add('btn-color');
+    num7.classList.add('btn-color');
+    num8.classList.add('btn-color');
+    num9.classList.add('btn-color');
+    num0.classList.add('btn-color');
+    dot.classList.add('btn-color');
+    add.classList.add('btn-color');
+    minus.classList.add('btn-color');
+    divide.classList.add('btn-color');
+    times.classList.add('btn-color');
+    clear.classList.add('btn-color');
+    result.classList.add('btn-color');
+    show.classList.add('btn-color');
+    backGround.classList.remove('bg-day');
+    backGround.classList.add('bg-night');
+    color2.style.display = "block";
+    color.style.display = "none";
+})
+color2.addEventListener('click', () => {
+    num1.classList.remove('btn-color');
+    num2.classList.remove('btn-color');
+    num3.classList.remove('btn-color');
+    num4.classList.remove('btn-color');
+    num5.classList.remove('btn-color');
+    num6.classList.remove('btn-color');
+    num7.classList.remove('btn-color');
+    num8.classList.remove('btn-color');
+    num9.classList.remove('btn-color');
+    num0.classList.remove('btn-color');
+    dot.classList.remove('btn-color');
+    add.classList.remove('btn-color');
+    minus.classList.remove('btn-color');
+    divide.classList.remove('btn-color');
+    times.classList.remove('btn-color');
+    clear.classList.remove('btn-color');
+    result.classList.remove('btn-color');
+    show.classList.remove('btn-color');
+    backGround.classList.remove('bg-night');
+    backGround.classList.add('bg-day');
+    color2.style.display = "none";
+    color.style.display = "block";
+})
